@@ -1,0 +1,3 @@
+Get-ADUser -Filter * -Properties * | select Name, Enabled, CreationTime, whenChanged, DistinguishedName | Export-CSV "C:\Scripts\AllUsers.csv"
+
+# Script partially borrowed from https://community.spiceworks.com/how_to/86794-powershell-how-to-export-displayname-email-address-and-title-from-ad-to-csv-file
